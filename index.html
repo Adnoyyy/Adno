@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>49. Crypto Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>49. Cryptocurrency Price Tracker</h1>
+
+
+<nav>
+<a data-page="home">Home</a>
+<a data-page="services">Services</a>
+<a data-pa   ge="help">Help</a>
+<a data-page="about">About</a>
+</nav>
+</header>
+
+<main class="container">
+
+<section class="hero">
+<div>
+<h2>Track Crypto Prices Easily</h2>
+<p>Live market • Alerts • Charts</p>
+<button id="startBtn">Start</button>
+</div>
+<img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c">
+</section>
+
+<!-- HOME -->
+<div id="home" class="page active">
+
+<h2>Live Prices</h2>
+<div id="coins"></div>
+
+<h2>Set Alert</h2>
+<form id="alertForm">
+<select id="coin">
+<option value="">Select Coin</option>
+<option>Bitcoin</option>
+<option>Ethereum</option>
+</select>
+
+<input id="target" type="number" placeholder="Target Price">
+<button>Add Alert</button>
+<p id="error"></p>
+</form>
+
+<canvas id="chart" width="300" height="150"></canvas>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="page">
+<h2>Services</h2>
+<div class="cards">
+
+<div>
+<img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040">
+<p>Live Prices</p>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05">
+<p>Alerts</p>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3">
+<p>Charts</p>
+</div>
+
+</div>
+</div>
+
+<!-- HELP -->
+<div id="help" class="page">
+<h2>Help</h2>
+<p>Select coin → set target → get notified.</p>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="page">
+<h2>About</h2>
+<p>Project: Crypto Price Tracker</p>
+<p>Student: adno aweys mohamed</p>
+<p>ID: C5240084</p>
+</div>
+
+</main>
+
+<footer>
+<p>© 2026 Crypto Tracker</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
